@@ -1,0 +1,25 @@
+/*******************************
+HIT ME UP SECTION
+*********************************/
+
+.hit-me-up {
+  padding-top: 3rem;
+
+  	& h1 {
+	  font-family: 'Quicksand', sans-serif;
+	}
+	& p strong {
+	  font-family: 'Bitter', serif;
+	  padding: 0 50px 0 50px; 
+	  display: block;
+	}
+	& h1,
+	& p strong {
+		text-align: center;
+	}
+}
+
+
+
+
+

@@ -1,0 +1,31 @@
+/*******************************
+DESIGN PROCESS SECTION
+*********************************/
+
+.design-process {
+  padding-top: 3rem;
+
+  	& h1 {
+	  font-family: 'Quicksand', sans-serif;
+	}
+	& p strong {
+	  font-family: 'Bitter', serif;
+	}
+	& p {
+	  font-family: 'Josefin Sans', sans-serif;
+	  padding: 0 50px 0 50px; 
+	}
+	& h1, 
+	& p strong,
+	& p {
+		@extend %centered;
+	}
+}
+
+
+
+
+
+
+
+

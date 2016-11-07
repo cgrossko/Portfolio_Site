@@ -1,0 +1,24 @@
+/*******************************
+EXAMPLES SECTION
+*********************************/
+
+.examples {
+	&-div {
+	  padding-top: 3rem; 
+	}
+	&-div h1 {
+	  font-family: 'Quicksand', sans-serif;
+	  text-align: center;
+	}
+	&-images {
+	  list-style: none;
+	  display: flex;
+	  flex-wrap: wrap;
+	  padding: 0;
+	}
+}
+
+.images {
+  width: 100%;
+  height: auto;
+}

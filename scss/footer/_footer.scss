@@ -1,0 +1,33 @@
+/*******************************
+FOOTER SECTION
+*********************************/
+
+.footer {
+  min-height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 3rem;
+  padding: 0 25px 0 25px;
+  background: #efefef;
+
+  & span {
+    font-family: 'Bitter', serif;
+  }
+}
+
+#footer-icons {
+    display: flex;
+    flex-direction: row;
+
+  & li {
+    padding: 9px;
+    color: black;
+    transition: all .3s ease-in-out;
+  }
+
+  & li:hover {
+    opacity: .3;
+  }
+}
+

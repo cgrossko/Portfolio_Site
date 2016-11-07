@@ -1,0 +1,53 @@
+/***********************************
+FORM STYLING
+************************************/
+
+#form {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin: 35px;
+}
+
+input, textarea {
+  @extend %form-rules;
+}
+
+input {
+  height: 50px;
+  border-bottom: none;
+}
+
+::-webkit-input-placeholder, input:focus, textarea:focus  {
+  text-indent: 25px;
+}
+
+textarea {
+  height: 110px;
+  max-height: 110px;
+  padding-top: 20px;
+}
+
+#submit {
+  
+  padding: 0;
+  margin: -5px 0px 0px 0px;
+  
+  font-size: 0.875em;
+  color: #b3aca7;
+  
+  outline:none;
+  cursor: pointer;
+  
+  border: solid 1px #b3aca7;
+  border-top: none;
+}
+
+input:hover, textarea:hover {
+  transform: scale(1.025);
+  background: #efefef;
+}
+
+#submit:hover {
+  background: #636363;
+}

@@ -1,0 +1,39 @@
+/*******************************
+WHAT I DO SECTION
+*********************************/
+
+.what-i-do {
+  background-image: url(../img/BlueSkies.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding-top: 3rem;
+
+  & h1, 
+  &-list {
+    text-align: center;
+  }
+  & h1 {
+    font-family: 'Quicksand', sans-serif;
+  }
+  &-list {
+    display: flex;
+    flex-direction: column;
+  }
+  &-list h4 {
+    font-family: 'Josefin Sans', sans-serif;
+  }
+  &-list li {
+    font-family: 'Bitter', serif;
+  }
+}
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,25 @@
+/*******************************
+MEDIA QUERY STYLE ADJUSTMENTS
+*********************************/
+
+@media (min-width: 1024px) {
+  
+  .top-banner {
+    background-image: url(../img/FeetUpBanner2.jpg);
+  }
+
+  .examples-images {
+    justify-content: center;
+  }
+
+  .images {
+    width: 500px;
+    margin: 20px;
+  }
+}
+
+@media (min-width: 970px) and (max-width: 1350px) {
+  .what-i-do h1 {
+    color: #cecece;
+  }
+}

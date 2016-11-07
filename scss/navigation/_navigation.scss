@@ -1,0 +1,85 @@
+/*******************************
+NAVIGATION
+*********************************/
+
+header{
+	height:60px; 
+	line-height:60px;
+}
+
+header, .menu {
+  width: 100%;
+  background: white;
+}
+
+.hamburger, .cross{
+  @extend %nav-rules;
+}
+
+.hamburger{
+  padding:5px 15px 0px 15px;
+  font-size:1.4em;
+}
+
+.cross{
+  padding:13px 15px 0px 15px;
+  font-size:3.3em;
+}
+
+.menu {
+    z-index:1000000; 
+    font-weight:bold; 
+    font-size:0.8em; 
+    height: 100%; 
+    position:absolute; 
+    text-align:center;
+    top: 0;
+    position: fixed;
+
+    & ul {
+      margin: 0; 
+      padding: 0; 
+    }
+    &-links {
+      font-size: xx-large;
+      font-weight: 600;
+    }
+    &-menu {
+      font-family: 'Josefin Sans', sans-serif;
+      margin-bottom: 1rem;
+    }
+    & li {
+      display: block;   
+      padding:8px 0 8px 0; 
+      color: black;
+      transition: all .3s ease-in-out;
+    }
+    & li:hover {
+      opacity: .3;
+    }
+    & a {
+      text-decoration:none; 
+    }
+  }
+
+.logo {
+  font-family: 'Bitter', serif;
+  font-size: large;
+  margin-bottom: 1.3rem;
+}
+
+#menu-icons {
+  display: inline-flex;
+  margin-top: 1.3rem;
+
+  & a {
+    padding: 12px;
+  }
+}
+
+
+
+
+
+
+

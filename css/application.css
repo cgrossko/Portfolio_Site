@@ -1,0 +1,297 @@
+/*******************************
+GENERAL STYLES
+*********************************/
+.main-container {
+  position: relative; }
+
+body {
+  margin: 0; }
+
+p {
+  font-size: x-large; }
+
+h1 {
+  font-size: xx-large; }
+
+ul {
+  list-style: none;
+  padding: 0; }
+
+.bitter {
+  font-family: 'Bitter', serif; }
+
+.josefin {
+  font-family: 'Josefin Sans', sans-serif; }
+
+.quicksand {
+  font-family: 'Quicksand', sans-serif; }
+
+/*******************************
+NAVIGATION
+*********************************/
+header {
+  height: 60px;
+  line-height: 60px; }
+
+header, .menu {
+  width: 100%;
+  background: white; }
+
+.hamburger {
+  padding: 5px 15px 0px 15px;
+  font-size: 1.4em; }
+
+.cross {
+  padding: 13px 15px 0px 15px;
+  font-size: 3.3em; }
+
+.menu {
+  z-index: 1000000;
+  font-weight: bold;
+  font-size: 0.8em;
+  height: 100%;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  position: fixed; }
+  .menu ul {
+    margin: 0;
+    padding: 0; }
+  .menu-links {
+    font-size: xx-large;
+    font-weight: 600; }
+  .menu-menu {
+    font-family: 'Josefin Sans', sans-serif;
+    margin-bottom: 1rem; }
+  .menu li {
+    display: block;
+    padding: 8px 0 8px 0;
+    color: black;
+    transition: all .3s ease-in-out; }
+  .menu li:hover {
+    opacity: .3; }
+  .menu a {
+    text-decoration: none; }
+
+.logo {
+  font-family: 'Bitter', serif;
+  font-size: large;
+  margin-bottom: 1.3rem; }
+
+#menu-icons {
+  display: inline-flex;
+  margin-top: 1.3rem; }
+  #menu-icons a {
+    padding: 12px; }
+
+.hamburger, .cross {
+  background: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  line-height: 45px;
+  color: black;
+  border: 0;
+  font-weight: bold;
+  cursor: pointer;
+  outline: none;
+  z-index: 10000000000000; }
+
+/*******************************
+TOP BANNER
+*********************************/
+.top-banner {
+  background-image: url(../img/FeetUpBanner.jpg);
+  height: 92vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  top: 0;
+  left: 0;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .top-banner h1 {
+    margin-top: 3rem;
+    font-family: 'Bitter', serif; }
+  .top-banner p {
+    line-height: 25px;
+    padding: 0 50px 0 50px;
+    font-family: 'Josefin Sans', sans-serif; }
+  .top-banner i {
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 3rem;
+    animation: pulse 1s linear infinite; }
+  .top-banner h1, .top-banner p, .top-banner i {
+    color: white; }
+
+@keyframes pulse {
+  0% {
+    transform: scale(1, 1); }
+  50% {
+    transform: scale(1.3, 1.3); }
+  100% {
+    transform: scale(1, 1); } }
+/*******************************
+EXAMPLES SECTION
+*********************************/
+.examples-div {
+  padding-top: 3rem; }
+.examples-div h1 {
+  font-family: 'Quicksand', sans-serif;
+  text-align: center; }
+.examples-images {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0; }
+
+.images {
+  width: 100%;
+  height: auto; }
+
+/*******************************
+DESIGN PROCESS SECTION
+*********************************/
+.design-process {
+  padding-top: 3rem; }
+  .design-process h1 {
+    font-family: 'Quicksand', sans-serif; }
+  .design-process p strong {
+    font-family: 'Bitter', serif; }
+  .design-process p {
+    font-family: 'Josefin Sans', sans-serif;
+    padding: 0 50px 0 50px; }
+
+.top-banner h1, .top-banner p, .top-banner i, .design-process h1, .design-process p strong, .design-process p {
+  text-align: center; }
+
+/*******************************
+WHAT I DO SECTION
+*********************************/
+.what-i-do {
+  background-image: url(../img/BlueSkies.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding-top: 3rem; }
+  .what-i-do h1, .what-i-do-list {
+    text-align: center; }
+  .what-i-do h1 {
+    font-family: 'Quicksand', sans-serif; }
+  .what-i-do-list {
+    display: flex;
+    flex-direction: column; }
+  .what-i-do-list h4 {
+    font-family: 'Josefin Sans', sans-serif; }
+  .what-i-do-list li {
+    font-family: 'Bitter', serif; }
+
+/*******************************
+HIT ME UP SECTION
+*********************************/
+.hit-me-up {
+  padding-top: 3rem; }
+  .hit-me-up h1 {
+    font-family: 'Quicksand', sans-serif; }
+  .hit-me-up p strong {
+    font-family: 'Bitter', serif;
+    padding: 0 50px 0 50px;
+    display: block; }
+  .hit-me-up h1, .hit-me-up p strong {
+    text-align: center; }
+
+/***********************************
+FORM STYLING
+************************************/
+#form {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin: 35px; }
+
+input {
+  height: 50px;
+  border-bottom: none; }
+
+::-webkit-input-placeholder, input:focus, textarea:focus {
+  text-indent: 25px; }
+
+textarea {
+  height: 110px;
+  max-height: 110px;
+  padding-top: 20px; }
+
+#submit {
+  padding: 0;
+  margin: -5px 0px 0px 0px;
+  font-size: 0.875em;
+  color: #b3aca7;
+  outline: none;
+  cursor: pointer;
+  border: solid 1px #b3aca7;
+  border-top: none; }
+
+input:hover, textarea:hover {
+  transform: scale(1.025);
+  background: #efefef; }
+
+#submit:hover {
+  background: #636363; }
+
+input, textarea {
+  font-size: 0.875em;
+  background: transparent;
+  outline: none;
+  color: #726659;
+  border: solid 1px #b3aca7;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out; }
+
+/*******************************
+FOOTER SECTION
+*********************************/
+.footer {
+  min-height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 3rem;
+  padding: 0 25px 0 25px;
+  background: #efefef; }
+  .footer span {
+    font-family: 'Bitter', serif; }
+
+#footer-icons {
+  display: flex;
+  flex-direction: row; }
+  #footer-icons li {
+    padding: 9px;
+    color: black;
+    transition: all .3s ease-in-out; }
+  #footer-icons li:hover {
+    opacity: .3; }
+
+/*******************************
+MEDIA QUERY STYLE ADJUSTMENTS
+*********************************/
+@media (min-width: 1024px) {
+  .top-banner {
+    background-image: url(../img/FeetUpBanner2.jpg); }
+
+  .examples-images {
+    justify-content: center; }
+
+  .images {
+    width: 500px;
+    margin: 20px; } }
+@media (min-width: 970px) and (max-width: 1350px) {
+  .what-i-do h1 {
+    color: #cecece; } }
+
+/*# sourceMappingURL=application.css.map */
